@@ -6,11 +6,13 @@
   </head>
   <body>
     <header>
-      <h1>Техномарт</h1>
-      <!-- В свойствах CSS скроем заголовок первого уровня -->
+      <h1 class="visually_hidden">Техномарт</h1>
       <nav>
         <a><img src="img/small_logo.png" width="200" height="50" alt="Техномарт"></a>
-        <input type="text" value="Поиск:">
+        <form name="search" method="get"
+              action = "https://echo.htmlacademy.ru/">
+          <input type="text" name="search_for" placeholder="Поиск:" aria-label="Поиск" value="">
+        </form>
         <ul>
           <li>Закладки: 0</li>
           <li>Корзина: 0</li>
@@ -22,16 +24,14 @@
           и инструментов для ремонта
         </p>
         <div class="contacts">
-          <p>
+          <p aria-label="Контакты">
             +7 (812) 555-05-55
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
         </div>
         <ul>
-          <li>
-            <a href="">Войти</a>
-            <a href="">Регистрация</a>
-          </li>
+          <li><a href="">Войти</a></li>
+          <li><a href="">Регистрация</a></li>
         </ul>
         <ul>
           <li><a href="index.html">Главная</a></li>
@@ -45,6 +45,142 @@
       </nav>
     </header>
     <main>
+      <section>
+        <div>
+          <p>Материалы <span>на любой вкус</span></p>
+          <img src="img/bucket.svg" width="100" height="100" alt="bucket">
+          <span>new</span>
+        </div>
+        <div>
+          <p>Инструмент <span>на все случаи</span></p>
+          <img src="img/drill.svg" width="100" height="100" alt="drill">
+        </div>
+        <div>
+          <p>Техника <span>для стройки</span></p>
+          <img src="img/traktor.svg" width="100" height="100" alt="traktor">
+        </div>
+        <div>
+          <p>Скидки 50% <span>на 350 товаров</span></p>
+          <img src="img/basket.svg" width="100" height="100" alt="basket">
+        </div>
+        <div>
+          <p>Доставка <span>бесплатно</span></p>
+          <img src="img/bus.svg" width="100" height="100" alt="bus">
+        </div>
+        <div class="catalog">
+          <p>Дрели <span>Соседям на радость!</span></p>
+          <!--картинку можно, наверное, фоном в css передать -->
+          <img src="img/drilling_man.png" width="200" height="160" alt="drilling_man">
+          <a href="catalog.html">Открыть каталог</a>
+        </div>
+      </section>
+      <section>
+        <h2>Популярные товары: </h2>
+        <a href="">Все популярные товары</a>
+        <ul>
+          <li>
+            <div class="item">
+              <figure>
+                <img src="img/bosch_bfg9000.jpg" width="50" height="50" alt="bosch_bfg9000">
+                <figcaption>
+                  Перфоратор BOSCH<br>
+                  BFG 9000
+                </figcaption>
+              </figure>
+              <p><span>32500р.</span></p>
+              <a href="">25500р.</a>
+            </div>
+          </li>
+          <li>
+            <div class="item">
+              <figure>
+                <img src="img/bosch_bfg3000.jpg" width="50" height="50" alt="bosch_bfg3000">
+                <figcaption>
+                  Перфоратор BOSCH<br>
+                  BFG 3000
+                </figcaption>
+              </figure>
+              <p><span>22500р.</span></p>
+              <a href="">15500р.</a>
+            </div>
+          </li>
+          <li>
+            <div class="item">
+              <figure>
+                <img src="img/bosch_bfg6000.jpg" width="50" height="50" alt="bosch_bfg6000">
+                <figcaption>
+                  Перфоратор BOSCH<br>
+                  BFG 6000
+                </figcaption>
+              </figure>
+              <p><span>30500р.</span></p>
+              <a href="">25500р.</a>
+            </div>
+          </li>
+          <li>
+            <div class="item">
+              <figure>
+                <img src="img/bosch_bfg2000.jpg" width="50" height="50" alt="bosch_bfg2000">
+                <figcaption>
+                  Перфоратор BOSCH<br>
+                  BFG 2000
+                </figcaption>
+              </figure>
+              <p><span>new</span></p>
+              <a href="">12500р.</a>
+            </div>
+          </li>
+          <li>
+            <div class="item">
+              <figure>
+                <img src="img/1.jpg" width="50" height="50" alt="Картинка 1">
+                <figcaption>
+                  Перфоратор BOSCH<br>
+                  BFG 3000
+                </figcaption>
+              </figure>
+              <p><span>22500р.</span></p>
+              <a href="">15500р.</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Популярные производители: </h2>
+        <a href="">Все производители</a>
+        <ul>
+          <li><a href=""><img src="img/bosch.png" alt="Bosch"></a></li>
+          <li><a href=""><img src="img/makita.png" alt="Makita"></a></li>
+          <li><a href=""><img src="img/dewalt.png" alt="DeWalt"></a></li>
+          <li><a href=""><img src="img/interskol.png" alt="Interskol"></a></li>
+          <li><a href=""><img src="img/hitachi.png" alt="Hitachi"></a></li>
+          <li><a href=""><img src="img/lg.png" alt="LG"></a></li>
+          <li><a href=""><img src="img/aeg.png" alt="AEG"></a></li>
+          <li><a href=""><img src="img/metabo.png" alt="Metabo"></a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Сервисы</h2>
+        <p>
+          Хороший интернет-магазин отличается от плохого не только ценами!
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+        </p>
+        <ul>
+          <li><a href="">Доставка</a></li>
+          <li><a href="">Гарантия</a></li>
+          <li><a href="">Кредит</a></li>
+        </ul>
+        <div class="service">
+          <h3>Доставка</h3>
+          <p>
+            Мы с удовольствием доставим ваш товар прямо
+            к вашему подъезду совершенно бесплатно!
+            Ведь мы неплохо заработаем,
+            поднимая его на ваш этаж!
+          </p>
+          <img src="img/truck.svg" width="100" height="100" alt="truck">
+        </div>
+      </section>
       <section>
         <h2>
           Компания "Техномарт"
@@ -83,7 +219,7 @@
         <li><a href="">Контакты</a></li>
       </ul>
       <div class="contacts">
-        <p>
+        <p aria-label="Контакты">
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           +7 (812) 555-05-55
         </p>
