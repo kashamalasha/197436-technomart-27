@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/cuprum-v11-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local("Cuprum Regular"), local("Cuprum-Regular"),
+       url("../fonts/cuprum-v11-latin-regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/cuprum-v11-latin-regular.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/cuprum-v11-latin-regular.woff") format("woff"), /* Modern Browsers */
+       url("../fonts/cuprum-v11-latin-regular.ttf") format("truetype"), /* Safari, Android, iOS */
+       url("../fonts/cuprum-v11-latin-regular.svg#Cuprum") format("svg"); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/pt-sans-v11-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('PT Sans'), local('PTSans-Regular'),
+       url('../fonts/pt-sans-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/pt-sans-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/pt-sans-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/pt-sans-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/pt-sans-v11-latin-regular.svg#PTSans') format('svg'); /* Legacy iOS */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Cuprum", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.main-nav__logo {
+  width: 220px;
+  min-height: 47px;
+  border-bottom: 2px solid darkred;
+
+  background-color: red;
+}
+
+.main-nav__search {
+  background-color: #293449;
+}
+
+.main-nav__search img {
+  opacity: 0.3;
+}
+
+.main-nav__search input {
+  background-color: #293449; s
+  color: white;
+}
