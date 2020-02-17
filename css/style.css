@@ -35,7 +35,20 @@ body {
   font-weight: 400;
 }
 
-.main-nav__logo {
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.top-nav__logo {
   width: 220px;
   min-height: 47px;
   border-bottom: 2px solid darkred;
@@ -43,15 +56,104 @@ body {
   background-color: red;
 }
 
-.main-nav__search {
+.top-nav__search {
   background-color: #293449;
 }
 
-.main-nav__search img {
+.top-nav__search img {
   opacity: 0.3;
 }
 
-.main-nav__search input {
+.top-nav__search input {
   background-color: #293449; s
   color: white;
+}
+
+.user-nav {
+  background-color: #f4f7f9;
+  font-size: 21px;
+}
+
+.user-nav__slogan {
+  font-style: italic;
+  font-size: 16px;
+  color: red;
+
+}
+
+.user-nav__phone {
+  color: red;
+}
+
+.user-nav__contacts {
+  font-size: 14px;
+}
+
+.site-nav {
+  background-color: #32425c;
+  color: white;
+  font-size: 17px;
+}
+
+.site-nav__list {
+  list-style: none;
+}
+
+.site-nav__item a:hover {
+  text-decoration: underline;
+}
+
+.main-about {
+  background-color: white;
+  font-family: "PTSans", serif;
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+.main-about__transport-item {
+  font-size: 18px;
+}
+
+.main-button {
+  background-color: red;
+  color: white;
+  font-size: 14px;
+}
+
+.two-columns .header {
+  font-family: "Cuprum", serif;
+  font-size: 30px;
+}
+
+.main-footer {
+  background-color: #32425c;
+  font-size: 18px;
+  color: white;
+}
+
+.main-footer__logo {
+  background-color: red;
+  border-bottom: 3px solid darkred;
+}
+
+.main-footer__list {
+  list-style: none;
+}
+
+.main-footer__item_offer {
+  color: #ffd180;
+}
+
+.main-footer__item_offer:hover,
+.main-footer__item:hover {
+  text-decoration: underline;
+}
+
+.main-footer__link {
+  text-decoration: none;
+  color: #ffd180;
+}
+
+.main-footer__link:hover {
+  text-decoration: underline;
 }
