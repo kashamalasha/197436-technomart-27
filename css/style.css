@@ -1,35 +1,9 @@
-@font-face {
-  font-family: "Cuprum";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/cuprum-v11-latin-regular.eot"); /* IE9 Compat Modes */
-  src: local("Cuprum Regular"), local("Cuprum-Regular"),
-       url("../fonts/cuprum-v11-latin-regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-       url("../fonts/cuprum-v11-latin-regular.woff2") format("woff2"), /* Super Modern Browsers */
-       url("../fonts/cuprum-v11-latin-regular.woff") format("woff"), /* Modern Browsers */
-       url("../fonts/cuprum-v11-latin-regular.ttf") format("truetype"), /* Safari, Android, iOS */
-       url("../fonts/cuprum-v11-latin-regular.svg#Cuprum") format("svg"); /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/pt-sans-v11-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('PT Sans'), local('PTSans-Regular'),
-       url('../fonts/pt-sans-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/pt-sans-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/pt-sans-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/pt-sans-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/pt-sans-v11-latin-regular.svg#PTSans') format('svg'); /* Legacy iOS */
-}
-
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -48,7 +22,15 @@ a {
   margin: -1px;
 }
 
-.top-nav__logo {
+.button {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  background-color: red;
+  color: white;
+  text-transform: uppercase;
+}
+
+.top-nav-logo {
   width: 220px;
   min-height: 47px;
   border-bottom: 2px solid darkred;
@@ -56,16 +38,16 @@ a {
   background-color: red;
 }
 
-.top-nav__search {
+.top-nav-search {
   background-color: #293449;
 }
 
-.top-nav__search img {
+.top-nav-search img {
   opacity: 0.3;
 }
 
-.top-nav__search input {
-  background-color: #293449; s
+.top-nav-search input {
+  background-color: #293449;
   color: white;
 }
 
@@ -74,19 +56,51 @@ a {
   font-size: 21px;
 }
 
-.user-nav__slogan {
+.user-nav-slogan {
   font-style: italic;
   font-size: 16px;
-  color: red;
-
-}
-
-.user-nav__phone {
+  line-height: 23px;
   color: red;
 }
 
-.user-nav__contacts {
+.user-nav-contacts {
   font-size: 14px;
+}
+
+.user-nav-phone {
+  font-size: 21px;
+  color: red;
+}
+
+.login-list li:first-child::before {
+  content: url(../img/icon-login.svg);
+  width: 20px;
+  height: 15px;
+  opacity: 0.3;
+  margin-right: 10px;
+}
+
+.login-item {
+  list-style: none;
+}
+
+.login-button {
+  background-color: #f4f7f9;
+}
+
+.logout-button img:hover {
+  /* todo: добавить красную иконку для выхода */
+}
+
+.user-link {
+  text-decoration: underline;
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+}
+
+.user-link:hover {
+  color: red;
 }
 
 .site-nav {
@@ -95,34 +109,119 @@ a {
   font-size: 17px;
 }
 
-.site-nav__list {
+.site-nav-list {
   list-style: none;
 }
 
-.site-nav__item a:hover {
+.site-nav-item a:hover {
   text-decoration: underline;
+}
+
+.main-breadcrumbs-list {
+  list-style-image: url(../img/icon-breadcrumbs-bullit.svg);
+}
+
+.main-breadcrumbs-item:first-child {
+  list-style: none;
+}
+
+.main-body .header {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .main-about {
   background-color: white;
-  font-family: "PTSans", serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 1.85;
 }
 
-.main-about__transport-item {
+.main-section-filter .header,
+.main-section-sorting .header {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.38;
+  background-color: #f7f3ec;
+}
+
+.main-section-sorting {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.38;
+  list-style: none;
+  text-transform: uppercase;
+  background-color: #f7f3ec;
+}
+
+.filter-price,
+.filter-producer,
+.filter-power,
+.sort-by {
+  border: 0 none;
+}
+
+.filter-producer-list,
+.filter-power-list,
+.sort-by-list,
+.sort-direction-list {
+  list-style: none;
+}
+
+.filter-producer-item,
+.filter-power-item {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.33;
+  text-transform: uppercase;
+}
+
+.filter-button,
+.slider-button {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.38;
+  text-transform: uppercase;
+}
+
+.sort-by-item a {
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-style: dotted;
+  color: black;
+  opacity: 0.3;
+}
+
+.sort-by-item a.checked {
+  text-decoration: none;
+  color: red;
+  opacity: 1.0;
+}
+
+.sort-direction-item:first-child::after {
+  content: url(../img/icon-dir-up.svg);
+  width: 11px;
+  height: 10px;
+}
+
+.sort-direction-item:last-child::after {
+  content: url(../img/icon-dir-down.svg);
+  width: 11px;
+  height: 10px;
+}
+
+.logistic-list {
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
+  font-weight: 700;
 }
 
-.main-button {
-  background-color: red;
-  color: white;
-  font-size: 14px;
-}
-
-.two-columns .header {
-  font-family: "Cuprum", serif;
+.two-columns-section .header,
+.main-about .header {
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
+  text-transform: uppercase;
 }
 
 .main-footer {
@@ -131,29 +230,26 @@ a {
   color: white;
 }
 
-.main-footer__logo {
+.main-footer-logo {
   background-color: red;
   border-bottom: 3px solid darkred;
 }
 
-.main-footer__list {
+.main-footer ul {
   list-style: none;
 }
 
-.main-footer__item_offer {
+.section-list {
   color: #ffd180;
 }
 
-.main-footer__item_offer:hover,
-.main-footer__item:hover {
-  text-decoration: underline;
-}
-
-.main-footer__link {
+.main-footer-link {
   text-decoration: none;
   color: #ffd180;
 }
 
-.main-footer__link:hover {
+.main-footer li:hover,
+.main-footer-link:hover {
   text-decoration: underline;
 }
+
