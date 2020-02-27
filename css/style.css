@@ -80,6 +80,10 @@ a {
   margin-right: 10px;
 }
 
+.login-list li:first-child:hover::before {
+  opacity: 1.0;
+}
+
 .login-item,
 .logout-item {
   list-style: none;
@@ -93,7 +97,7 @@ a {
   opacity: 0.3;
 }
 
-.logout-button a:hover {
+.logout-item:hover img {
   opacity: 1.0;
 }
 
@@ -163,6 +167,20 @@ a {
   list-style: none;
   text-transform: uppercase;
   background-color: #f7f3ec;
+}
+
+.main-section-slider {
+  width:620px;
+  height: 266px;
+  background-color: black;
+  background-image: url(../img/slider-1.jpg);
+
+  color: white;
+  font-size: 18px;
+}
+
+.main-section-slider p:first-child {
+  font-size: 36px;
 }
 
 .filter-price,
