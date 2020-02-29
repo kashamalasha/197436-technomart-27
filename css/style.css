@@ -25,30 +25,100 @@ a {
 .button {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
-  background-color: red;
+  background-color: crimson;
   color: white;
   text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #ca2c37;
+}
+
+.button:active {
+  background-color: #ba2732;
+}
+
+.top-nav {
+  background-color: #293449;
+  color: white;
+  font-size: 17px;
 }
 
 .top-nav-logo {
   width: 220px;
   min-height: 47px;
-  border-bottom: 2px solid darkred;
+  border-bottom: 2px solid firebrick;
+  background-color: crimson;
+}
 
-  background-color: red;
+.top-nav-logo:hover {
+  background-color: #ca2c37;
+}
+
+.top-nav-logo:active {
+  background-color: #ba2732;
 }
 
 .top-nav-search {
-  background-color: #293449;
+  color: white;
 }
 
-.top-nav-search img {
+.top-nav-search svg {
   opacity: 0.3;
+  fill: white;
 }
 
 .top-nav-search input {
   background-color: #293449;
   color: white;
+}
+
+.top-nav-search:hover svg {
+  opacity: 1.0;
+}
+
+.top-nav-search:focus,
+.top-nav-search:focus input,
+.top-nav-search:focus svg {
+  color: black;
+  background-color: white;
+  opacity: 1.0;
+  fill: red;
+}
+
+.top-nav-cart-list {
+  list-style: none;
+}
+
+.top-nav-cart-item svg {
+  fill: white;
+  opacity: 0.3;
+}
+
+.top-nav-cart-item:hover {
+  background-color: #212a3a;
+}
+
+.top-nav-cart-item:hover svg {
+  opacity: 1.0;
+}
+
+.top-nav-cart-item:active {
+  background-color: #161d29;
+  opacity: 0.6;
+}
+
+.top-nav-cart-item:last-child {
+  background-color: #63a63e;
+}
+
+.top-nav-cart-item:last-child:hover {
+  background-color: #5fbb2d;
+}
+
+.top-nav-cart-item:last-child:active {
+  background-color: #518534;
+  opacity: 0.5;
 }
 
 .user-nav {
@@ -93,6 +163,15 @@ a {
   background-color: #f4f7f9;
 }
 
+.login-item:hover {
+  color: red;
+}
+
+.login-item:active {
+  color: black;
+  opacity: 0.3;
+}
+
 .logout-item img {
   opacity: 0.3;
 }
@@ -127,8 +206,13 @@ a {
   list-style: none;
 }
 
-.site-nav-item a:hover {
-  text-decoration: underline;
+.site-nav-item:hover {
+  background-color: #293449;
+}
+
+.site-nav-item:active {
+  background-color: #1d2739;
+  opacity: 0.5;
 }
 
 .main-breadcrumbs-list {
@@ -205,6 +289,22 @@ a {
   text-transform: uppercase;
 }
 
+.filter-price-range {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.filter-producer-header,
+.filter-power-header,
+.filter-price-header {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  background-color: inherit;
+  text-transform: uppercase;
+}
+
 .filter-button,
 .slider-button {
   font-family: "PT Sans", Arial, sans-serif;
@@ -227,22 +327,105 @@ a {
   opacity: 1.0;
 }
 
-.sort-direction-item:first-child::after {
-  content: url(../img/icon-dir-up.svg);
-  width: 11px;
-  height: 10px;
+.sort-by-item:hover a {
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-style: solid;
+  color: black;
+  opacity: 1.0;
 }
 
-.sort-direction-item:last-child::after {
-  content: url(../img/icon-dir-down.svg);
-  width: 11px;
-  height: 10px;
+.sort-direction-item svg {
+  fill: black;
+  opacity: 0.3;
+}
+
+.sort-direction-item a.checked svg {
+  fill: red;
+  opacity: 1.0;
+}
+
+.sort-direction-item svg:hover,
+.sort-direction-item a.checked svg:hover {
+  fill: black;
+  opacity: 1.0;
+}
+
+.main-section-catalog {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 15px;
+}
+
+.main-section-catalog .header {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  background-color: #f9f5f0;
+}
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  font-weight: 700;
+}
+
+.item-header {
+  font-size: 18px;
+}
+
+.item-price-promo {
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.item-price-regular {
+  color: white;
+  background-color: crimson;
+}
+
+.catalog-page-button {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.main-section div.main-section-card:nth-of-type(1) {
+  background-color: #ffbf47;
+}
+
+.main-section div.main-section-card:nth-of-type(2) {
+  background-color: #3bbce3;
+}
+
+.main-section div.main-section-card:nth-of-type(3) {
+  background-color: #dc91d8;
+}
+
+.main-section div.main-section-card:nth-of-type(4) {
+  background-color: #8ed78f;
+}
+
+.main-section div.main-section-card:nth-of-type(5) {
+  background-color: #ffc047;
+}
+
+.main-section-card {
+  font-size: 24px;
+  color: white;
+}
+
+.main-section-card .card-label {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.main-section-card .new-flag {
+  font-size: 17px;
+  text-transform: lowercase;
 }
 
 .logistic-list {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
-  font-weight: 700;
 }
 
 .two-columns-section .header,
@@ -259,8 +442,8 @@ a {
 }
 
 .main-footer-logo {
-  background-color: red;
-  border-bottom: 3px solid darkred;
+  background-color: crimson;
+  border-bottom: 3px solid firebrick;
 }
 
 .main-footer ul {
@@ -271,6 +454,16 @@ a {
   color: #ffd180;
 }
 
+.social-item:hover {
+  background-color: crimson;
+}
+
+.main-footer .copyrights,
+.main-footer .feedback,
+.main-footer .developed-by {
+  font-size: 16px;
+}
+
 .main-footer-link {
   text-decoration: none;
   color: #ffd180;
@@ -279,4 +472,14 @@ a {
 .main-footer li:hover,
 .main-footer-link:hover {
   text-decoration: underline;
+}
+
+.main-footer li:active {
+  text-decoration: none;
+  opacity: 0.3;
+}
+
+.main-footer-link:active {
+  text-decoration: none;
+  color: crimson;
 }
