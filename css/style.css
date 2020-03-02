@@ -39,8 +39,9 @@ a {
 }
 
 .main-nav {
-  /*display: flex;*/
-  /*flex-wrap wrap;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .top-nav {
@@ -53,6 +54,7 @@ a {
   justify-content: center;
   width: 100%;
   height: 42px;
+  border-bottom: 5px solid #F4F7F9;
 }
 
 .top-nav-logo {
@@ -127,14 +129,19 @@ a {
 }
 
 .top-nav-cart-item {
+  display: inline-block;
   width: 150px;
   height: 42px;
+  /*margin-left: 15px;*/
   text-align: center;
   vertical-align: middle;
   line-height: 42px;
 }
 
 .top-nav-cart-item svg {
+  /*display: inline-block;*/
+  margin-right: 5px;
+  vertical-align: middle;
   fill: #FFF;
   opacity: 0.3;
 }
@@ -166,11 +173,18 @@ a {
 }
 
 .user-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 940px;
+  min-height: 158px;
   background-color: #F4F7F9;
   font-size: 21px;
 }
 
 .user-nav-slogan {
+  width: 196px;
+  height: 60px;
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
@@ -178,19 +192,49 @@ a {
 }
 
 .user-nav-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
   font-size: 14px;
+}
+
+.user-nav-contacts p {
+  margin: 0;
 }
 
 .user-nav-phone {
   font-size: 21px;
+  text-align: center;
   color: #F00;
+}
+
+.login-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 281px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-list li {
+  /*border: 1px solid black;*/
+  padding: 14px 25px;
+  background-color: #FFF
+}
+
+.login-list li:first-child {
+  padding-left: 0px;
 }
 
 .login-list li:first-child::before {
   content: url(../img/icon-login.svg);
   width: 20px;
   height: 15px;
-  opacity: 0.3;
+  margin: 14px;
+  opacity: 0.2;
   margin-right: 10px;
 }
 
@@ -201,10 +245,6 @@ a {
 .login-item,
 .logout-item {
   list-style: none;
-}
-
-.login-button {
-  background-color: #F4F7F9;
 }
 
 .login-item:hover {
@@ -241,13 +281,22 @@ a {
 }
 
 .site-nav {
+  width: 940px;
+
   background-color: #32425C;
   color: #FFF;
   font-size: 17px;
 }
 
 .site-nav-list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
 }
 
 .site-nav-item:hover {
