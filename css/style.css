@@ -22,6 +22,12 @@ a {
   margin: -1px;
 }
 
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .button {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
@@ -176,7 +182,7 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 940px;
+  /*width: 940px;*/
   min-height: 158px;
   background-color: #F4F7F9;
   font-size: 21px;
@@ -281,7 +287,7 @@ a {
 }
 
 .site-nav {
-  width: 940px;
+  /*width: 940px;*/
 
   background-color: #32425C;
   color: #FFF;
@@ -346,7 +352,7 @@ a {
   background-color: #F7F3EC;
 }
 
-.main-section-slider {
+.features-slider {
   width:620px;
   height: 266px;
   background-color: #000;
@@ -356,7 +362,7 @@ a {
   font-size: 18px;
 }
 
-.main-section-slider p:first-child {
+.features-slider p:first-child {
   font-size: 36px;
 }
 
@@ -447,12 +453,12 @@ a {
   opacity: 1.0;
 }
 
-.main-section-catalog {
+.catalog-section {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 15px;
 }
 
-.main-section-catalog .header {
+.catalog-section .header {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   background-color: #F9F5F0;
@@ -484,37 +490,43 @@ a {
   text-transform: uppercase;
 }
 
-.main-section div.main-section-card:nth-of-type(1) {
-  background-color: #FFBF47;
-}
-
-.main-section div.main-section-card:nth-of-type(2) {
-  background-color: #3BBCE3;
-}
-
-.main-section div.main-section-card:nth-of-type(3) {
-  background-color: #DC91D8;
-}
-
-.main-section div.main-section-card:nth-of-type(4) {
-  background-color: #8ED78F;
-}
-
-.main-section div.main-section-card:nth-of-type(5) {
-  background-color: #FFC047;
-}
-
-.main-section-card {
+.categories-card,
+.features-card {
   font-size: 24px;
   color: #FFF;
 }
 
-.main-section-card .card-label {
+div.categories-card:nth-of-type(1) {
+  background-color: #FFBF47;
+}
+
+div.categories-card:nth-of-type(2) {
+  background-color: #3BBCE3;
+}
+
+div.categories-card:nth-of-type(3) {
+  background-color: #DC91D8;
+}
+
+.features-card {
+  background-color: black;
+}
+
+.features-card:first-child {
+  background-color: #8ED78F;
+}
+
+.features-card:last-child {
+  background-color: #FFC047;
+}
+
+.categories-card .card-label,
+.features-card .card-label {
   font-size: 14px;
   text-transform: uppercase;
 }
 
-.main-section-card .new-flag {
+.categories-card .new-flag {
   font-size: 17px;
   text-transform: lowercase;
 }
