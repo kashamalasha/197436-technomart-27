@@ -710,10 +710,40 @@ a {
 
 .main-footer ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.first-line {
+  display: flex;
+}
+
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.second-line {
+  display: flex;
 }
 
 .section-list {
+  display: flex;
+  flex-wrap: wrap;
   color: #FFD180;
+}
+
+.bottom-line {
+  display: flex;
+  min-height: 33px;
+}
+
+.social-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
 }
 
 .social-item:hover {
