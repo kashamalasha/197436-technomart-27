@@ -727,6 +727,11 @@ a {
   display: flex;
 }
 
+.main-footer-contacts {
+  width: 322px;
+  min-height: 40px;
+}
+
 .section-list {
   display: flex;
   flex-wrap: wrap;
@@ -736,6 +741,16 @@ a {
 .bottom-line {
   display: flex;
   min-height: 33px;
+}
+
+.bottom-line .copyrights {
+  width: 228px;
+  min-height: 33px;
+}
+
+.bottom-line p:not(:first-child) {
+  width: 132px;
+  min-height: 32px;
 }
 
 .social-list {
