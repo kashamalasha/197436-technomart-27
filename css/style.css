@@ -433,6 +433,9 @@ a {
   list-style: none;
   text-transform: uppercase;
   background-color: #F7F3EC;
+
+/*  TODO: удалить перед слиянием */
+  outline: 1px dotted crimson;
 }
 
 .filter-price,
@@ -483,10 +486,11 @@ a {
 
 .sort-by {
   display: flex;
-  /*flex-direction: row;*/
-  justify-content: space-between;
-  /*height: 38px;*/
+  flex-direction: column;
   width: 580px;
+
+  /*  TODO: удалить перед слиянием */
+  outline: 1px dotted crimson;
 }
 
 .sort-by-list {
@@ -494,14 +498,27 @@ a {
   padding: 0;
   display: flex;
   justify-content: space-between;
-  width: 100px;
+  flex-shrink: initial;
+  /*width: 100px;*/
+
+  /*  TODO: удалить перед слиянием */
+  outline: 1px dotted crimson;
 }
 
 .sort-direction-list {
   display: flex;
   margin: 0;
   padding: 0;
-  width: 43px;
+  /*width: 43px;*/
+
+  /*  TODO: удалить перед слиянием */
+  outline: 1px dotted crimson;
+}
+
+.sort-by-item,
+.sort-direction-item {
+  /*  TODO: удалить перед слиянием */
+  outline: 1px dotted crimson;
 }
 
 .sort-by-item a {
