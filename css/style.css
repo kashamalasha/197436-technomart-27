@@ -254,6 +254,8 @@ input[type="radio"].visually-hidden {
   width: 281px;
   justify-content: space-between;
   align-items: center;
+
+  list-style: none;
 }
 
 .login-list li {
@@ -1350,7 +1352,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-map {
-  display: block;
+  display: none;
   top: 120px;
   left: 50%;
 
@@ -1363,3 +1365,6 @@ input[type="radio"].visually-hidden {
     0 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
 
+.modal-show {
+  display: block;
+}
