@@ -116,45 +116,68 @@
             <a class="button" href="">Все популярные товары</a>
           </div>
           <ul class="catalog-list">
-            <li class="catalog-item">
-              <figure>
-                <img src="img/item-bosch-9000.jpg" width="218" height="170" alt="bosch_bfg9000">
-                <figcaption>
-                  Перфоратор BOSCH BFG 9000
-                </figcaption>
-              </figure>
-              <p><span class="item-price-promo">32500р.</span></p>
-              <a class="item-price-regular" href="">25500р.</a>
+            <li>
+              <article class="catalog-item">
+                <figure>
+                  <img src="img/item-bosch-9000.jpg" width="218" height="170" alt="bosch_bfg9000">
+                  <figcaption class="item-header">
+                    Перфоратор BOSCH BFG 9000
+                  </figcaption>
+                </figure>
+                <div class="item-price-promo">32500р.</div>
+                <div class="item-price-regular"><a href="">25500р.</a></div>
+                <div class="actions">
+                  <button class="item-button-buy" type="button">Купить</button>
+                  <button class="item-button-save" type="button">В закладки</button>
+                </div>
+              </article>
             </li>
-            <li class="catalog-item">
-              <figure>
-                <img src="img/item-bosch-3000.jpg" width="218" height="170" alt="bosch_bfg3000">
-                <figcaption>
-                  Перфоратор BOSCH BFG 3000
-                </figcaption>
-              </figure>
-              <p><span class="item-price-promo">22500р.</span></p>
-              <a class="item-price-regular" href="">15500р.</a>
+            <li>
+              <article class="catalog-item">
+                <figure>
+                  <img src="img/item-bosch-3000.jpg" width="218" height="170" alt="bosch_bfg3000">
+                  <figcaption class="item-header">
+                    Перфоратор BOSCH BFG 3000
+                  </figcaption>
+                </figure>
+                <div class="item-price-promo">22500р.</div>
+                <div class="item-price-regular"><a href="">15500р.</a></div>
+                <div class="actions">
+                  <button class="item-button-buy" type="button">Купить</button>
+                  <button class="item-button-save" type="button">В закладки</button>
+                </div>
+              </article>
             </li>
-            <li class="catalog-item">
-              <figure>
-                <img src="img/item-bosch-6000.jpg" width="218" height="170" alt="bosch_bfg6000">
-                <figcaption>
-                  Перфоратор BOSCH BFG 6000
-                </figcaption>
-              </figure>
-              <p><span class="item-price-promo">30500р.</span></p>
-              <a class="item-price-regular" href="">25500р.</a>
+            <li>
+              <article class="catalog-item">
+                <figure>
+                  <img src="img/item-bosch-6000.jpg" width="218" height="170" alt="bosch_bfg6000">
+                  <figcaption class="item-header">
+                    Перфоратор BOSCH BFG 6000
+                  </figcaption>
+                </figure>
+                <div class="item-price-promo">30500р.</div>
+                <div class="item-price-regular"><a href="">25500р.</a></div>
+                <div class="actions">
+                  <button class="item-button-buy" type="button">Купить</button>
+                  <button class="item-button-save" type="button">В закладки</button>
+                </div>
+              </article>
             </li>
-            <li class="catalog-item">
-              <figure>
-                <img src="img/item-bosch-2000.jpg" width="218" height="170" alt="bosch_bfg2000">
-                <figcaption>
-                  Перфоратор BOSCH BFG 2000
-                </figcaption>
-              </figure>
-              <p><span class="label-new">new</span></p>
-              <a class="item-price-regular" href="">12500р.</a>
+            <li>
+              <article class="catalog-item new">
+                <figure>
+                  <img src="img/item-bosch-2000.jpg" width="218" height="170" alt="bosch_bfg2000">
+                  <figcaption class="item-header">
+                    Перфоратор BOSCH BFG 2000
+                  </figcaption>
+                </figure>
+                <div class="item-price-regular"><a href="">12500р.</a></div>
+                <div class="actions">
+                  <button class="item-button-buy" type="button">Купить</button>
+                  <button class="item-button-save" type="button">В закладки</button>
+                </div>
+              </article>
             </li>
           </ul>
         </section>
@@ -336,31 +359,41 @@
         </div>
       </div>
     </footer>
-    <section class="visually-hidden feedback">
-      <h2 class="visually_hidden">Обратная связь</h2>
+    <section class="modal modal-feedback">
+      <h2 class="visually-hidden">Обратная связь</h2>
       <form name="feedback" method="post"
             action="https://echo.htmlacademy.ru/">
         <fieldset>
-          <p>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" name="name" placeholder="Имя Фамилия">
-          </p>
-          <p>
-            <label for="email">Ваш e-mail:</label>
-            <input type="email" id="email" name="email" placeholder="email@example.com">
-          </p>
-          <p>
-            <label for="mail-content">Текст письма:</label>
-            <textarea name="mail-content" id="mail-content" placeholder="В свободной форме"></textarea>
-          </p>
-          <input type="submit" class="button" value="Отправить">
+          <div class="modal-feedback-top">
+            <p>
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" name="name" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label for="email">Ваш e-mail:</label>
+              <input type="email" id="email" name="email" placeholder="email@example.com">
+            </p>
+            <p>
+              <label for="mail-content">Текст письма:</label>
+              <textarea id="mail-content" name="mail-content" cols="30" rows="5" placeholder="В свободной форме"></textarea>
+            </p>
+          </div>
+          <div class="modal-feedback-bottom">
+            <input type="submit" class="button" value="Отправить">
+          </div>
         </fieldset>
       </form>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
-    <section class="visually-hidden map">
-      <h2 class="visually_hidden">Как к нам добраться</h2>
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как к нам добраться</h2>
       <img src="img/map-big.jpg" width="940" height="446"
            alt="Мы находимся по адресу г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
   </body>
 </html>
