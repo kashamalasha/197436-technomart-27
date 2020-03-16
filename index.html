@@ -359,31 +359,41 @@
         </div>
       </div>
     </footer>
-    <section class="visually-hidden feedback">
-      <h2 class="visually_hidden">Обратная связь</h2>
+    <section class="modal modal-feedback">
+      <h2 class="visually-hidden">Обратная связь</h2>
       <form name="feedback" method="post"
             action="https://echo.htmlacademy.ru/">
         <fieldset>
-          <p>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" name="name" placeholder="Имя Фамилия">
-          </p>
-          <p>
-            <label for="email">Ваш e-mail:</label>
-            <input type="email" id="email" name="email" placeholder="email@example.com">
-          </p>
-          <p>
-            <label for="mail-content">Текст письма:</label>
-            <textarea name="mail-content" id="mail-content" placeholder="В свободной форме"></textarea>
-          </p>
-          <input type="submit" class="button" value="Отправить">
+          <div class="modal-feedback-top">
+            <p>
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" name="name" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label for="email">Ваш e-mail:</label>
+              <input type="email" id="email" name="email" placeholder="email@example.com">
+            </p>
+            <p>
+              <label for="mail-content">Текст письма:</label>
+              <textarea id="mail-content" name="mail-content" cols="30" rows="5" placeholder="В свободной форме"></textarea>
+            </p>
+          </div>
+          <div class="modal-feedback-bottom">
+            <input type="submit" class="button" value="Отправить">
+          </div>
         </fieldset>
       </form>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
-    <section class="visually-hidden map">
-      <h2 class="visually_hidden">Как к нам добраться</h2>
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как к нам добраться</h2>
       <img src="img/map-big.jpg" width="940" height="446"
            alt="Мы находимся по адресу г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
   </body>
 </html>

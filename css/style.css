@@ -13,13 +13,31 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
+/*
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+}*/
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
@@ -1208,3 +1226,140 @@ a {
   text-decoration: none;
   color: #DC143C;
 }
+
+.modal {
+  position: fixed;
+
+  color: #000;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  width: 21px;
+  height: 21px;
+  border: none;
+
+  background-image: url("../img/form-close.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: transparent;
+}
+
+.modal-feedback {
+  display: none;
+  top: 120px;
+  left: 50%;
+
+  margin-left: -310px;
+
+  width: 620px;
+  height: 430px;
+  background-color: #FFF;
+  box-shadow:
+    0 7px 0 0 #FF5256 inset,
+    0 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+
+.modal-feedback fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.modal-feedback-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding: 45px 80px;
+}
+
+.modal-feedback-bottom {
+  box-sizing: border-box;
+
+  width: 100%;
+  height: 112px;
+  padding: 37px 80px;
+
+  background-color: #F4F4F4;
+}
+
+.modal-feedback p {
+  margin: 0;
+}
+
+.modal-feedback-top p:not(:last-child) {
+  width: 220px;
+}
+
+.modal-feedback-top p:last-child {
+  width: 460px;
+  margin-top: 23px;
+}
+
+.modal-feedback label {
+  display: block;
+
+  margin-bottom: 13px;
+
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.modal-feedback input[type="email"],
+.modal-feedback input[type="text"] {
+  box-sizing: border-box;
+
+  width: 100%;
+  padding: 10px 14px;
+  border: 2px solid #DEE3E4;
+  border-radius: 4px;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 13px;
+}
+
+.modal-feedback input[type=submit] {
+  height: 38px;
+  width: 100%;
+
+  padding: 9px 13px;
+}
+
+.modal-feedback textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100px;
+  padding: 12px 14px;
+
+  border: 2px solid #DEE3E4;
+  border-radius: 4px;
+
+  resize: none;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 13px;
+}
+
+.modal-map {
+  display: block;
+  top: 120px;
+  left: 50%;
+
+  margin-left: -470px;
+
+  width: 940px;
+  height: 446px;
+
+  box-shadow:
+    0 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+
