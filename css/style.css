@@ -13,14 +13,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-/*
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}*/
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -53,6 +45,8 @@ input[type="radio"].visually-hidden {
   padding: 13px;
   padding-top: 12px;
   padding-bottom: 2px;
+
+  border-radius: 5px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
@@ -1250,6 +1244,23 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: transparent;
+
+  cursor: pointer;
+}
+
+.modal-add-basket {
+  display: block;
+  top: 120px;
+  left: 50%;
+
+  margin-left: -310px;
+
+  width: 620px;
+  /*height: 394px;*/
+  background-color: #FFF;
+  box-shadow:
+    0 7px 0 0 #FF5256 inset,
+    0 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
 
 .modal-feedback {
@@ -1260,7 +1271,7 @@ input[type="radio"].visually-hidden {
   margin-left: -310px;
 
   width: 620px;
-  height: 430px;
+  /*height: 430px;*/
   background-color: #FFF;
   box-shadow:
     0 7px 0 0 #FF5256 inset,
@@ -1273,16 +1284,20 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
-.modal-feedback-top {
+.modal-feedback-top,
+.modal-add-basket-top {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
 
   padding: 45px 80px;
 }
 
-.modal-feedback-bottom {
+.modal-feedback-bottom,
+.modal-add-basket-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   box-sizing: border-box;
 
   width: 100%;
@@ -1292,8 +1307,24 @@ input[type="radio"].visually-hidden {
   background-color: #F4F4F4;
 }
 
-.modal-feedback p {
+.modal-feedback p,
+.modal-add-basket p {
   margin: 0;
+}
+
+.modal-add-basket .button {
+  width: 220px;
+}
+
+.modal-feedback p:first-child,
+.modal-add-basket .button:first-child {
+  margin-right: 20px;
+}
+
+.modal-add-basket p {
+  margin-left: 32px;
+
+  font-size: 30px;
 }
 
 .modal-feedback-top p:not(:last-child) {
@@ -1363,6 +1394,10 @@ input[type="radio"].visually-hidden {
 
   box-shadow:
     0 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+
+.modal-map img {
+  /*display: none;*/
 }
 
 .modal-show {
