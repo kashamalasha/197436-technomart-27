@@ -46,7 +46,7 @@
         <div class="user-nav">
           <p class="user-nav-slogan">
             Интернет-магазин
-            строительных материалов
+            строительных материалов<br>
             и инструментов для ремонта
           </p>
           <div class="user-nav-contacts">
@@ -71,13 +71,13 @@
         </div>
         <div class="site-nav">
           <ul class="site-nav-list">
-            <li class="site-nav-item"><a href="index.html">Главная</a></li>
-            <li class="site-nav-item"><a href="">Компания</a></li>
-            <li class="site-nav-item"><a href="catalog.html">Каталог</a></li>
-            <li class="site-nav-item"><a href="">Новости</a></li>
-            <li class="site-nav-item"><a href="">Спецпредложения</a></li>
-            <li class="site-nav-item"><a href="">Доставка</a></li>
-            <li class="site-nav-item"><a href="">Контакты</a></li>
+            <li><a class="site-nav-item" href="index.html">Главная</a></li>
+            <li><a class="site-nav-item" href="">Компания</a></li>
+            <li><a class="site-nav-item" href="catalog.html">Каталог</a></li>
+            <li><a class="site-nav-item" href="">Новости</a></li>
+            <li><a class="site-nav-item" href="">Спецпредложения</a></li>
+            <li><a class="site-nav-item" href="">Доставка</a></li>
+            <li><a class="site-nav-item" href="">Контакты</a></li>
           </ul>
         </div>
       </div>
@@ -112,54 +112,77 @@
             <h3 class="header">Фильтр:</h3>
             <form name="filtering" method="get"
                   action="https://echo.htmlacademy.ru/">
+
               <fieldset class="filter-price">
                 <legend class="filter-price-header">Цена:</legend>
-                <p class="filter-price-range">
-                  <label class="visually-hidden" for="min_price">Минимальная цена: </label>
-                  <input class="price-range-min" type="number" id="min_price" name="min_price" value="0">
-                  <label class="visually-hidden" for="max_price">Максимальная цена: </label>
-                  <input class="price-range-max" type="number" id="max_price" name="max_price" value="30000">
-                </p>
+                <div class="filter-range">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="range-toggle  range-toggle-min"></div>
+                    <div class="range-toggle  range-toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">
+                      <span class="visually-hidden">от</span><input type="text" name="min-price" value="0">
+                    </label>
+                    <span>—</span>
+                    <label class="max-price">
+                      <span class="visually-hidden">до</span><input type="text" name="max-price" value="30000">
+                    </label>
+                  </div>
+                </div>
               </fieldset>
-              <fieldset class="filter-producer">
-                <legend class="filter-producer-header">Производители:</legend>
-                <ul class="filter-producer-list">
-                  <li class="filter-producer-item">
-                    <input type="checkbox" id="bosch" name="bosch" checked>
+              <fieldset class="filter-brands">
+                <legend class="filter-brands-header">Производители:</legend>
+                <ul class="filter-list">
+                  <li class="filter-item">
+                    <input class="visually-hidden  filter-input  filter-input-checkbox" type="checkbox" name="bosch"
+                           id="bosch"
+                           value="Bosch" checked>
                     <label for="bosch">Bosch</label>
                   </li>
-                  <li class="filter-producer-item">
-                    <input type="checkbox" id="interskol" name="interskol">
+                  <li class="filter-item">
+                    <input class="visually-hidden  filter-input  filter-input-checkbox" type="checkbox" name="interskol"
+                           id="interskol" value="Интерскол">
                     <label for="interskol">Интерскол</label>
                   </li>
-                  <li class="filter-producer-item">
-                    <input type="checkbox" id="makita" name="makita" checked>
+                  <li class="filter-item">
+                    <input class="visually-hidden  filter-input  filter-input-checkbox" type="checkbox" name="makita"
+                           id="makita" value="Makita" checked>
                     <label for="makita">Makita</label>
                   </li>
-                  <li class="filter-producer-item">
-                    <input type="checkbox" id="dewalt" name="dewalt">
+                  <li class="filter-item">
+                    <input class="visually-hidden  filter-input  filter-input-checkbox" type="checkbox" name="dewalt"
+                           id="dewalt" value="Dewalt">
                     <label for="dewalt">Dewalt</label>
                   </li>
-                  <li class="filter-producer-item">
-                    <input type="checkbox" id="hitachi" name="hitachi">
+                  <li class="filter-item">
+                    <input class="visually-hidden  filter-input  filter-input-checkbox" type="checkbox" name="hitachi"
+                           id="hitachi" value="Hitachi">
                     <label for="hitachi">Hitachi</label>
                   </li>
                 </ul>
               </fieldset>
+
               <fieldset class="filter-power">
                 <legend class="filter-power-header">Питание:</legend>
-                <ul class="filter-power-list">
-                  <li class="filter-power-item">
-                    <input type="radio" id="battery-power" name="power" value="battery" checked>
-                    <label for="battery-power">Аккумуляторные</label>
+                <ul class="filter-list">
+                  <li class="filter-item">
+                    <input class="visually-hidden  filter-input  filter-input-radio" type="radio" name="power-group"
+                           id="accum"
+                           value="Аккумуляторные" checked>
+                    <label for="accum">Аккумуляторные</label>
                   </li>
-                  <li class="filter-power-item">
-                    <input type="radio" id="220v-power" name="power" value="220V">
-                    <label for="220v-power">Сетевые</label>
+                  <li class="filter-item">
+                    <input class="visually-hidden  filter-input  filter-input-radio" type="radio" name="power-group"
+                           id="power" value="Сетевые">
+                    <label for="power">Сетевые</label>
                   </li>
                 </ul>
               </fieldset>
-              <button class="catalog-page-button" type="submit">Показать</button>
+              <button class="button button-filter" type="submit">Показать</button>
             </form>
           </section>
         </div>
@@ -444,5 +467,6 @@
       <span class="visually-hidden">Закрыть</span>
     </button>
   </section>
+  <script src="js/add2basket.js"></script>
   </body>
 </html>
