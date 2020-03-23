@@ -168,7 +168,6 @@ input[type="radio"].visually-hidden {
   color: #000000;
 
   background-color: #FFFFFF;
-  outline: none;
 }
 
 .top-nav-search-input:focus + .top-nav-search-btn path,
@@ -310,7 +309,6 @@ input[type="radio"].visually-hidden {
 .user-nav-list a:hover,
 .user-nav-list a:focus {
   color: #ee3643;
-  outline: none;
 }
 
 .user-nav-list,
@@ -1112,7 +1110,6 @@ fieldset.filter-power {
 .actions .item-button-buy:active {
   background-color: #518534;
   box-shadow: none;
-  outline: none;
 }
 
 .actions .item-button-save {
@@ -1129,14 +1126,12 @@ fieldset.filter-power {
   color: #32425C;
 
   border-color: #32425C;
-  outline: none;
 }
 
 .actions .item-button-save:active {
   color: rgba(50, 66, 92, 0.3);
 
   border-color: rgba(50, 66, 92, 0.3);
-  outline: none;
 }
 
 .catalog-item .actions {
@@ -1205,7 +1200,6 @@ fieldset.filter-power {
 .page-item a:hover,
 .page-item a:focus {
   border: 1px solid #BDC6CA;
-  outline: none;
 }
 
 .page-item a:active {
@@ -1269,7 +1263,6 @@ fieldset.filter-power {
 .card a:focus,
 .card a:hover {
   background-color: rgba(0, 0, 0, 0.2);
-  outline: none;
 }
 
 .card a:active {
@@ -1579,7 +1572,6 @@ fieldset.filter-power {
 .service-item:focus,
 .service-item:hover {
   background-color: #293449;
-  outline: none;
 }
 
 .service-item.checked {
@@ -1723,6 +1715,7 @@ fieldset.filter-power {
   text-align: center;
   vertical-align: middle;
   line-height: 73px;
+  outline: none;
 }
 
 .main-footer ul {
