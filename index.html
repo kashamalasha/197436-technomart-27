@@ -15,15 +15,18 @@
           <a class="top-nav-logo" href="index.html">
             <img src="img/logo-technomart.svg" width="109" height="19" alt="Техномарт">
           </a>
-          <div class="top-nav-search">
-            <svg width="17" height="17" viewBox="0 0 17 17">
-              <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
-            </svg>
-            <form name="search" method="get"
-                action = "https://echo.htmlacademy.ru/">
-            <input type="search" name="search_for" placeholder="Поиск:" aria-label="Поиск" value="">
+          <form class="top-nav-search"
+                action="https://echo.htmlacademy.ru"
+                method="get">
+            <input class="top-nav-search-input" type="search" name="search" placeholder="Поиск:">
+            <button class="top-nav-search-btn  hidden" type="submit">
+              <span class="visually-hidden">Искать</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                <path fill="#ffffff"
+                      d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
+              </svg>
+            </button>
           </form>
-          </div>
           <ul class="top-nav-cart-list">
             <li class="top-nav-cart-item">
               <svg width="14" height="16" viewBox="0 0 14 16">
@@ -55,10 +58,23 @@
                 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
               </p>
             </div>
-            <ul class="login-list">
-              <li><a class="login-item" href="">Войти</a></li>
-              <li><a class="login-item" href="">Регистрация</a></li>
-            </ul>
+            <div class="user-nav-box">
+              <ul class="user-nav-list">
+                <li>
+                  <a class="login-link" href="login.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                      <path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/>
+                      <path fill="#c5c5c5"
+                            d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
+                    </svg>
+                    <span>Войти</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="registration-link" href="reg.html">Регистрация</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="site-nav">
             <ul class="site-nav-list">
@@ -343,7 +359,7 @@
         <a class="main-footer-logo" href="index.html">
           <img src="img/logo-technomart.svg" width="138" height="23" alt="Техномарт">
         </a>
-        <ul  class="about-list">
+        <ul class="about-list">
           <li><a class="about-item" href="">Компания</a></li>
           <li><a class="about-item" href="">Новости</a></li>
           <li><a class="about-item" href="catalog.html">Каталог</a></li>
@@ -408,7 +424,7 @@
         </div>
       </div>
     </footer>
-    <section class="modal modal-feedback">
+    <div class="modal modal-feedback">
       <h2 class="visually-hidden">Обратная связь</h2>
       <form name="feedback" method="post"
             action="https://echo.htmlacademy.ru/">
@@ -435,8 +451,8 @@
       <button class="modal-close" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
-    </section>
-    <section class="modal modal-map">
+    </div>
+    <div class="modal modal-map">
       <h2 class="visually-hidden">Как к нам добраться</h2>
       <div class="map-container">
 <!--      <img src="img/map-big.jpg" width="940" height="446"-->
@@ -448,8 +464,7 @@
       <button class="modal-close" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
-    </section>
-    <script src="js/feedback.js"></script>
-    <script src="js/map.js"></script>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
