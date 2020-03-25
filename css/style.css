@@ -148,8 +148,7 @@ input[type="radio"].visually-hidden {
 .top-nav-search input {
   width: 270px;
   height: 42px;
-  padding-right: 10px;
-  padding-left: 50px;
+  padding-left: 47px;
 
   color: #FFFFFF;
 
@@ -201,11 +200,22 @@ input[type="radio"].visually-hidden {
 }
 
 .top-nav-cart-item svg {
-  margin-right: 5px;
+  margin-right: 8px;
+  margin-bottom: 4px;
 
   vertical-align: middle;
   fill: #FFFFFF;
   opacity: 0.3;
+}
+
+.top-nav-cart-item p {
+  display: inline-block;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.top-nav-cart-item:nth-child(2) p {
+  margin-right: 13px;
 }
 
 .top-nav-cart-item:hover {
@@ -237,7 +247,7 @@ input[type="radio"].visually-hidden {
 .user-nav {
   display: flex;
   align-items: flex-start;
-  padding: 45px 0 40px;
+  padding: 45px 0 28px;
 
   font-size: 21px;
 
@@ -247,7 +257,8 @@ input[type="radio"].visually-hidden {
 .user-nav-slogan {
   width: 200px;
   min-height: 60px;
-  margin-top: 0;
+  margin-top: 5px;
+  margin-bottom: 10px;
   margin-left: 53px;
   margin-right: 65px;
 
@@ -269,6 +280,7 @@ input[type="radio"].visually-hidden {
 
 .user-nav-contacts p {
   margin: 0;
+  margin-top: 3px;
 }
 
 .user-nav-phone {
@@ -438,10 +450,6 @@ input[type="radio"].visually-hidden {
   padding-right: 28px;
 }
 
-
-
-
-
 .user-link {
   text-decoration: underline;
   font-size: 16px;
@@ -454,6 +462,7 @@ input[type="radio"].visually-hidden {
 }
 
 .site-nav {
+  display: flex;
   min-height: 60px;
 
   font-size: 17px;
@@ -467,11 +476,14 @@ input[type="radio"].visually-hidden {
 .site-nav-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
   min-height: 55px;
   width: 100%;
   margin: 0;
-  padding: 0 25px;
+  padding: 0 20px;
+  padding-left: 23px;
+  padding-right: 25px;
 
   list-style: none;
 }
@@ -546,7 +558,7 @@ input[type="radio"].visually-hidden {
   height: 20px;
   margin: 0;
   padding: 35px;
-  padding-left: 30px;
+  padding-left: 27px;
 
   background-color: #F4F7F9;
 }
@@ -670,6 +682,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
 
   list-style: none;
+  line-height: 20px;
 }
 
 .filter-item {
@@ -680,9 +693,17 @@ input[type="radio"].visually-hidden {
 .filter-item label {
   position: relative;
 
-  padding-left: 35px;
+  padding-left: 33px;
 
   cursor: pointer;
+}
+
+.filter-brands .filter-item:last-child {
+  margin-bottom: 46px;
+}
+
+.filter-power .filter-item:last-child {
+  margin-bottom: 18px;
 }
 
 .filter-item label::before,
@@ -773,8 +794,9 @@ input[type="radio"].visually-hidden {
 .button-filter {
   height: inherit;
   margin: 0;
-  padding-top: 10px;
   padding-bottom: 8px;
+  padding-right: 39px;
+  padding-left: 39px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -829,7 +851,7 @@ input[type="radio"].visually-hidden {
   width: 205px;
   min-height: 38px;
   margin-bottom: 20px;
-  padding-left: 15px;
+  padding-left: 18px;
 
   border-radius: 3px;
 }
@@ -840,7 +862,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   min-height: 38px;
   margin-bottom: 21px;
-  padding: 0 15px;
+  padding: 0 18px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -996,7 +1018,7 @@ fieldset.filter-power {
   align-items: center;
   width: 220px;
   height: 318px;
-  margin-bottom: 21px;
+  margin-bottom: 18px;
 
   font-weight: 700;
   text-align: center;
@@ -1020,7 +1042,10 @@ fieldset.filter-power {
 }
 
 .item-header {
-  padding: 0 20px;
+  padding-top: 2px;
+  padding-right: 22px;
+  padding-bottom: 0;
+  padding-left: 18px;
 
   font-size: 18px;
   line-height: 20px;
@@ -1028,6 +1053,7 @@ fieldset.filter-power {
 
 .item-price-promo {
   min-height: 20px;
+  padding-top: 8px;
 
   font-size: 17px;
   color: #999999;
@@ -1039,7 +1065,10 @@ fieldset.filter-power {
   position: relative;
 
   width: 80px;
-  margin: 0 auto 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-right: 36px;
+  margin-left: 40px;
   padding: 9px 30px;
 
   font-size: 17px;
@@ -1243,13 +1272,15 @@ fieldset.filter-power {
 
 .section-about {
   padding: 0;
-  padding-top: 40px;
-  padding-bottom: 55px;
+  padding-top: 43px;
+  padding-bottom: 56px;
 
   background-color: #F4F7F9;
 }
 
 .section-about p {
+  padding-top: 4px;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -1281,11 +1312,14 @@ fieldset.filter-power {
   width: 300px;
   min-height: 123px;
   margin-bottom: 20px;
-  padding: 20px 25px;
+  padding: 21px;
+  padding-bottom: 18px;
+
+  background-repeat: no-repeat;
 }
 
 .card h3 {
-  margin: 0 0 15px;
+  margin: 0 0 13px;
 
   font-size: 24px;
   line-height: 30px;
@@ -1295,6 +1329,8 @@ fieldset.filter-power {
   display: inline-block;
   width: 135px;
   min-height: 38px;
+  margin-bottom: 2px;
+  margin-left: 2px;
 
   font-size: 14px;
   line-height: 38px;
@@ -1315,6 +1351,26 @@ fieldset.filter-power {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.category-material {
+  background-color: #FFBF47;
+  background-image: url(../img/icon-bucket.svg);
+  background-size: 44px 65px;
+  background-position: 83% 55%;
+}
+
+.category-tools {
+  background-color: #3BBCE3;
+  background-image: url(../img/icon-drill.svg);
+  background-size: 75px 61px;
+  background-position: 87% 55%;
+}
+
+.category-tech {
+  background-color: #DC91D8;
+  background-image: url(../img/icon-tracktor.svg);
+  background-size: 78px 62px;
+  background-position: 85% 53%;
+}
 .features-section {
   margin-top: 60px;
   margin-bottom: 35px;
@@ -1376,18 +1432,19 @@ fieldset.filter-power {
 
 .slider-item .button {
   position: absolute;
-  bottom: 29px;
+  top: 205px;
   left: 24px;
 
-  padding: 50px;
-  padding-top: 10px;
-  padding-bottom: 0;
+  padding-top: 12px;
+  padding-right: 48px;
+  padding-bottom: 2px;
+  padding-left: 49px;
 }
 
 .slider-controls {
   position: absolute;
   left: 50%;
-  bottom: 36px;
+  bottom: 30px;
   z-index: 3;
 
   transform: translate(-50%, 0);
@@ -1412,7 +1469,7 @@ fieldset.filter-power {
   cursor: pointer;
 }
 
-.slider-controls label:first-child {
+.slider-controls label:last-child {
   background-color: #EE3643;
 }
 
@@ -1448,39 +1505,18 @@ fieldset.filter-power {
   transform: rotate(180deg);
 }
 
-.card {
-  background-repeat: no-repeat;
-  background-position: 83% 55%;
-}
-
-.category-material {
-  background-color: #FFBF47;
-  background-image: url(../img/icon-bucket.svg);
-  background-size: 44px 65px;
-}
-
-.category-tools {
-  background-color: #3BBCE3;
-  background-image: url(../img/icon-drill.svg);
-  background-size: 75px 61px;
-}
-
-.category-tech {
-  background-color: #DC91D8;
-  background-image: url(../img/icon-tracktor.svg);
-  background-size: 78px 62px;
-}
-
 .feature-sales {
   background-color: #8ED78F;
   background-image: url(../img/icon-basket.svg);
   background-size: 59px 72px;
+  background-position: 81% 52%;
 }
 
 .feature-delivery {
   background-color: #FFC047;
   background-image: url(../img/icon-bus.svg);
   background-size: 78px 63px;
+  background-position: 85% 55%;
 }
 
 .card .card-label {
@@ -1494,7 +1530,8 @@ fieldset.filter-power {
 }
 
 .producer-section {
-  margin-bottom: 60px;
+  margin-top: 3px;
+  margin-bottom: 65px;
 }
 
 .popular-header,
@@ -1503,16 +1540,22 @@ fieldset.filter-power {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-  padding: 25px;
-  padding-left: 30px;
+  padding-top: 24px;
   padding-right: 24px;
+  padding-bottom: 25px;
+  padding-left: 28px;
 
   background-color: #F9F5F0;
+}
+
+.producer-header {
+  margin-bottom: 21px;
 }
 
 .popular-header .header,
 .producer-header .header {
   margin: 0;
+  padding-top: 3px;
 }
 
 .popular-header .button,
@@ -1560,6 +1603,24 @@ fieldset.filter-power {
 
 .producer-item img {
   margin: auto;
+}
+
+.producer-list img[alt="Interskol"] {
+  padding-right: 2px;
+  padding-bottom: 14px;
+}
+
+.producer-item img[alt="Makita"] {
+  padding-bottom: 2px;
+}
+
+.producer-item img[alt="Hitachi"] {
+  padding-top: 2px;
+  padding-left: 2px;
+}
+
+.producer-item img[alt="Metabo"] {
+  padding-bottom: 6px;
 }
 
 .service-section {
@@ -1664,7 +1725,7 @@ fieldset.filter-power {
   display: none;
   width: 700px;
   min-height: 282px;
-  padding-left: 80px;
+  padding-left: 79px;
 
   background-repeat: no-repeat;
   background-position: 100% 105%;
@@ -1705,7 +1766,8 @@ fieldset.filter-power {
 
 .service-description-item p {
   width: 275px;
-  height: 83px;
+  min-height: 83px;
+  margin-top: 0px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -1714,7 +1776,7 @@ fieldset.filter-power {
 .logistic-list {
   margin: 0;
   padding: 0;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 
   list-style: none;
   font-family: "Cuprum", Arial, sans-serif;
@@ -1755,8 +1817,13 @@ fieldset.filter-power {
   width: 519px;
 }
 
+.main-about p {
+  margin-bottom: 20px;
+}
+
 .main-about p:not(:last-of-type) {
-  margin-bottom: 30px;
+  margin-bottom: 26px;
+  padding-top: 2px;
 
   line-height: 24px;
 }
@@ -1766,7 +1833,8 @@ fieldset.filter-power {
 }
 
 .main-contacts p {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
+  padding-top: 2px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -1774,12 +1842,12 @@ fieldset.filter-power {
 }
 
 .main-contacts .button {
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 61px;
+  padding-right: 61px;
 }
 
 .main-contacts-map {
-  padding-bottom: 30px;
+  padding-bottom: 33px;
 }
 
 .index-columns .header,
@@ -1837,6 +1905,7 @@ fieldset.filter-power {
 .about-item {
   display: inline-block;
   height: 28px;
+  padding-bottom: 3px;
 }
 
 .about-item:hover {
@@ -1855,6 +1924,8 @@ fieldset.filter-power {
   min-height: 40px;
   margin: 0;
   padding: 0;
+  padding-left: 1px;
+  padding-top: 2px;
 }
 
 .section-list {
@@ -1870,6 +1941,7 @@ fieldset.filter-power {
 .section-item {
   display: inline-block;
   height: 48px;
+  padding-top: 2px;
 }
 
 .section-item:hover {
@@ -1899,7 +1971,8 @@ fieldset.filter-power {
 .bottom-line .copyrights {
   width: 240px;
   min-height: 33px;
-  margin-right: 161px;
+  margin-right: 167px;
+  padding-bottom: 3px;
 }
 
 .bottom-line p:not(:first-child) {
@@ -1939,6 +2012,11 @@ fieldset.filter-power {
   justify-content: space-between;
   width: 324px;
   margin-left: 119px;
+  padding-bottom: 2px;
+}
+
+.link-container p:last-child {
+  margin-right: 8px;
 }
 
 .main-footer .copyrights,
